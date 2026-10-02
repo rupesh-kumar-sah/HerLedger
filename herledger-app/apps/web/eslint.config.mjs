@@ -3,6 +3,9 @@ import { fileURLToPath } from "url";
 import nextCoreWebVitals from "eslint-config-next/core-web-vitals";
 import nextTypescript from "eslint-config-next/typescript";
 import tseslint from "typescript-eslint"; // eslint-disable-line @typescript-eslint/no-unused-vars -- kept for future typed rules
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
